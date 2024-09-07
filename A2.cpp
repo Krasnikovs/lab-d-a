@@ -41,7 +41,7 @@ int main() {
         std::cout << count << endl;
 
         char user_choise;
-        std::cout << "Do you whant to continue (Y/n):";
+        std::cout << "Vēlaties turpināt? (Y/n):";
         cin >> user_choise;
 
         if (user_choise == 'n') {
