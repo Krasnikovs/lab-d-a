@@ -1,3 +1,11 @@
+/*
+Gustavs Krasņikovs, gk24018
+A2. Doti naturāli skaitļi m un n. Noskaidrot starpību starp m un n dažādo reizinātāju skaitu
+ (piemēram, m=9, n=6, atbilde ir -1, jo m ir mazāk reizinātāju nekā n).
+Programma izveidota: 07.09.2024.
+*/
+
+
 #include <iostream>
 using namespace std;
 
@@ -5,9 +13,10 @@ int a2() {
 
     int m, n;
 
-    cout << "Ievadiet pirmo naturālo skaitli: ";
+    
+    cout << "Ievadiet pirmo naturālo skaitli m: ";
     cin >> m; // Lai lietotajs ievada skaitli
-    cout << "Ievadiet otro naturālo skaitli: ";
+    cout << "Ievadiet otro naturālo skaitli n: ";
     cin >> n;
 
     int m_divider_count = 0; // Sāk ar 0, lai varētu saskaitīt dalītāju skaitu
@@ -37,7 +46,14 @@ int main() {
 
     bool continue_prog = true; // nosaka, lai programma izpildītos vismaz vienu reizi
 
+    cout << "Doti naturāli skaitļi m un n. Noskaidrot starpību starp m un n dažādo reizinātāju skaitu." << endl;
+    
     do {
+        /*
+        Programmas daļa,
+        kuru vajag atkartot
+        */
+
         int count = a2(); // izsauc funkciju, kas paprasīs lietotājam naturālus skaitļus un 
                             // noteiktu dalītāju skatu starpību
         std::cout << "Atbilde:" << count << endl;
@@ -57,14 +73,9 @@ int main() {
     return 0;
 }
 
-/*
-Gustavs Krasņikovs, gk24018
-A2. Izveidot programmu, kas apreiķina naturālu skaitļa, ko ievada lietotājs, 
-dalāmo skaitu un salīdzina kuram skaitlim ir lielāks dalāmo skaits, izvadot dalāmo skatļu starpību.
-Programma izveidota: 07.09.2024.
-*/
 
 /*
+    Testa plāns
     Ievads      Programmas vēlamā    Rezultāts C++
                     reakcija
 
